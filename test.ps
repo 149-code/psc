@@ -1,0 +1,12 @@
+loop X from 1 to 1000
+	COND = true
+	loop N from 2 to X - 1
+		if X mod N == 0 then
+			COND = false
+		end if
+	end loop
+
+	if COND then
+		output X
+	end if
+end loop
